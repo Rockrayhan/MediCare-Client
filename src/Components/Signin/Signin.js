@@ -8,6 +8,7 @@ const Signin = () => {
         <div>
             <Header> </Header>
             
+            <div className="container">
             <h2 className="mt-5 mb-4">Please Login</h2>
             <form>
                 <div className="row mb-3">
@@ -26,6 +27,7 @@ const Signin = () => {
             <button className="btn btn-success">Log in</button>
 
                 <button onClick={googleSignIn} className="btn btn-primary ms-4">Google Sign In</button>
+            </div>
                
                 
         </div>

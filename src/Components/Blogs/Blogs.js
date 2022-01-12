@@ -6,7 +6,7 @@ const Blogs = () => {
     return (
         <div>
             <Header> </Header>
-            <h1 className="mt-5">Welcome To Our Blog Section</h1>
+            <h1 className="mt-5 mb-5 fw-bold">Welcome To Our Blog Section</h1>
             <small className="text-success">Thanks For Signing in</small>
             <div className="mt-4 mb-4 p-5"> <h3> University of Utah Health Care: “HealthFeed” </h3>
             <p>   University of Utah Health Care has staked its online claim to expertise on health topics ranging from the timely and lighthearted to the specific and serious. Whether a post is addressing common types of acne and their causes or the ins and outs of glaucoma, “HealthFeed” excels at being a trusted digital resource for patients and nonpatients alike.</p>
