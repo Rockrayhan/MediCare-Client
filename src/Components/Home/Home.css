@@ -1,0 +1,41 @@
+.banner-header{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-top: 50px ;
+   
+}
+.banner-container{
+    margin-bottom: 250px;
+}
+
+body {
+    background-color: rgba(255, 235, 205, 0.411);
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+}
+
+.hr-width {
+    width: 150px;
+    margin-left: 570px;
+    margin-top: 20px;
+    padding: 3px;
+    color: rgb(2, 154, 255);
+}
+
+.brief-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(96, 187, 248, 0.521);
+}
+
+.brief-info {
+    margin-bottom: 200px;
+}
+
