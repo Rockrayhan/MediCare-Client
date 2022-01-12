@@ -10,6 +10,7 @@
 
 body {
     background-color: rgba(255, 235, 205, 0.411);
+    overflow-x: hidden;
 }
 
 .services{
@@ -21,9 +22,9 @@ body {
 }
 
 .hr-width {
-    width: 150px;
-    margin-left: 570px;
-    margin-top: 20px;
+    /* width: 150px; */
+    /* margin-left: 570px;
+    margin-top: 20px; */
     padding: 3px;
     color: rgb(2, 154, 255);
 }

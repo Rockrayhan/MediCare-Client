@@ -72,8 +72,8 @@ const Footer = () => {
   
     
     <div class="text-center p-3" style={{backgroundColor:" rgba(0, 0, 0, 0.2)"}}>
-      © 2021 Copyright: <br />
-      <a href='https://khayrul-alam-portfo.netlify.app/' class="text-white">www.medicare.com</a>
+      © 2022 Copyright by:     
+      <a style={{textDecoration:'none'}} href='https://khayrul-alam-portfo.netlify.app/' class="text-white">   www.medicare.com</a>
     </div>
     
   </footer>

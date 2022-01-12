@@ -23,38 +23,40 @@ const Home = () => {
                 {/* =========== Banner part ============  */}
 
 
-                <div className="row mt-5 banner-container">
-                    <div className="col-lg-4">
+                <div className="row gx-5 mt-5 banner-container">
+                    <div className="col-lg-5 mt-5">
                         <h1 className="banner-header">Welcome to <span className="text-primary">MediCare </span></h1>
 
                         <p className="mt-4">This is one of the best Hospital in town. Healthcare patients have more options than ever before. With so much information available online, these patients no longer feel the need to visit the closest hospital, a medical practice closest to their location, or even healthcare practices with multiple locations in the community. That’s why it’s so important to have a planned, budgeted healthcare marketing plan to reach new and returning patients in your area at the best moment.</p>
                         <a href='#appointment' className="btn btn-primary p-3 mt-2 rounded"> Make Appointment </a>
                     </div>
-                    <div className="col-lg-6 ms-5">
-                        <img className="" src={banner1} alt="" />
+                    <div className="col-lg-7">
+                        <img className="img-fluid" src={banner1} alt="" />
                     </div>
                 </div>
 
         {/* ============ services part ========= */}
 
 
-                <h1> Our Services </h1>
+                <h1 className='fw-bold mb-5'> Our Services </h1>
                 <hr className="hr-width" />
-                <div className="services">
-                    {
+               
+                   <div className="row">
+                   {
                         services.map(service => <Servces
                             services={service}
                             key={service.id}>
 
                         </Servces>)
                     }
+                   </div>
 
-                </div>
+              
 
 
                 {/*========= brief info part ========== */}
 
-                <div className="mt-5 mb-5">
+                <div className="mt-5 mb-5 fw-bold">
                     <h1> Brief information </h1>
                     <hr className="hr-width" />
                 </div>
@@ -79,7 +81,7 @@ const Home = () => {
 
                 {/* ============== Appointment part ============ */}
                     <h1 id='appointment'> Make An Appointment  </h1>
-                    <hr className="hr-width" />
+                    {/* <hr className="hr-width" /> */}
                 <div className="row mt-5 appointment-container">
                     <div className="col-lg-6">
                         <img src={appointment} className="img-fluid" alt="" />
