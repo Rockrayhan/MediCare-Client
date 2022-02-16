@@ -30,7 +30,7 @@ const Home = () => {
                         <p className="mt-4">This is one of the best Hospital in town. Healthcare patients have more options than ever before. With so much information available online, these patients no longer feel the need to visit the closest hospital, a medical practice closest to their location, or even healthcare practices with multiple locations in the community. That’s why it’s so important to have a planned, budgeted healthcare marketing plan to reach new and returning patients in your area at the best moment.</p>
                         <a href='#appointment' className="btn btn-primary p-3 mt-2 rounded"> Make Appointment </a>
                     </div>
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 mt-5">
                         <img className="img-fluid" src={banner1} alt="" />
                     </div>
                 </div>

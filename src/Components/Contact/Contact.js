@@ -10,7 +10,7 @@ const Contact = () => {
     }
     return (
         <div>
-            <Header> </Header>
+            
             <div className="container" >
                 <h1 className="mt-5 fw-bold mb-5 text-primary"> Contact us </h1>
                 <form >

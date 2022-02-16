@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header/Header';
+
 import department1 from '../Department/emergency.jpg';
 import department6 from '../Department/ent-surgery.jpg';
 import department2 from '../Department/general-surgery.jpg';
@@ -12,7 +12,7 @@ import Footer from '../Footer/Footer';
 const Department = () => {
     return (
         <div>
-            <Header> </Header>
+         
             <div className="container">
             <h1 className="mt-5 mb-2 text-primary">Our  Departments </h1>
             

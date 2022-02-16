@@ -1,14 +1,14 @@
 import React from 'react';
 import useAuth from '../../Hooks/useAuth';
-import Header from '../Header/Header';
+
 
 const Signin = () => {
     const {googleSignIn} = useAuth() ;
     return (
-        <div>
-            <Header> </Header>
+        <div className='d-flex justify-content-center align-items-center'>
             
-            <div className="container">
+            
+            <div style={{width:'40%'}} className="container">
             <h2 className="mt-5 mb-4">Please Login</h2>
             <form>
                 <div className="row mb-3">

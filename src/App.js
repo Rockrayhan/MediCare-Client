@@ -5,6 +5,7 @@ import Blogs from './Components/Blogs/Blogs';
 import Contact from './Components/Contact/Contact';
 import Department from './Components/Department/Department';
 import Doctors from './Components/Doctors/Doctors';
+import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
@@ -16,9 +17,12 @@ function App() {
   return (
     <div className="App">
       <AuthProvider>
+       
 
       <BrowserRouter>
+      <Header></Header>
       <Switch>
+        
       <Route exact path ="/">
         <Home></Home>
       </Route>

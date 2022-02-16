@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header/Header';
+
 import doctor1 from '../Doctors/doctor1.png';
 import doctor2 from '../Doctors/doctor2.png';
 import doctor3 from '../Doctors/doctor3.png';
@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer';
 const Doctors = () => {
     return (
         <div>
-            <Header> </Header>
+            
             <div className="container">
             <h1 className="mt-5 mb-2"> Experienced Doctors </h1>
             <h5>Here are some world class popularly recomended doctors </h5>

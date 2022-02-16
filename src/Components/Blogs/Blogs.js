@@ -1,11 +1,11 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+
 
 const Blogs = () => {
     return (
         <div>
-            <Header> </Header>
+            
             <h1 className="mt-5 mb-5 fw-bold">Welcome To Our Blog Section</h1>
             <small className="text-success">Thanks For Signing in</small>
             <div className="mt-4 mb-4 p-5"> <h3> University of Utah Health Care: “HealthFeed” </h3>
