@@ -1,9 +1,8 @@
-.login-width {
-    /* margin-left: 40px; */
-}
+
 .user-name{
     /* margin-left: 500px; */
     color: white;
     font-weight: bold;
     font-style: italic;
+    margin-top: 15px;
 }

@@ -61,7 +61,7 @@ const Header = () => {
 
 
             <Nav>
-               {user.displayName} 
+               <span className='user-name'>{user.displayName} </span>
 
 
               {
