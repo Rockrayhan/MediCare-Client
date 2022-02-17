@@ -113,18 +113,7 @@ const Blogs = () => {
 </Card>
 
 </div>
-
-
-
-
-
-
-
-
-
-                 
-             
-            
+          
         </div>
         <Footer></Footer>
         </div>
