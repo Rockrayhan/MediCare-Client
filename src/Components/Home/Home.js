@@ -8,6 +8,10 @@ import brief1 from '../../images/brief-1.png';
 import brief2 from '../../images/brief-2.png';
 import brief3 from '../../images/brief-3.png';
 import appointment from '../../images/appointment.jpg';
+import CountUp from 'react-countup';
+
+
+
 
 const Home = () => {
     const [services, setServices] = useState([]);
@@ -64,18 +68,19 @@ const Home = () => {
                     <div className="col-lg-4">
                         <img className="brief-img " src={brief1} alt="" />
                         <h3 className="mt-3">Doctors <br />
-                            60+</h3>
+                        <CountUp end={60} />+</h3>
+                            
 
                     </div>
                     <div className="col-lg-4">
                         <img className="brief-img " src={brief2} alt="" />
                         <h3 className="mt-3">Staffs <br />
-                            100+</h3>
+                        <CountUp end={100} />+</h3>
                     </div>
                     <div className="col-lg-4">
                         <img className="brief-img" src={brief3} alt="" />
                         <h3 className="mt-3">Services <br />
-                            40+</h3>
+                        <CountUp end={30} />+</h3>
                     </div>
                 </div>
 

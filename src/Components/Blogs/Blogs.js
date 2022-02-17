@@ -1,35 +1,21 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import {  Card } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
 
 
 const Blogs = () => {
     return (
         <div>
+          <div className='container'>
             
-            <h1 className="mt-5 mb-5 fw-bold">Welcome To Our Blog Section</h1>
+            <h1 className="mt-5 mb-5 fw-bold">Welcome To Our Blogs </h1>
             
-          {/*   
-            <div className="mt-4 mb-4 p-5"> <h3> </h3>
-           
-             </div>
-            <div className="mt-4 mb-4 p-5"> <h3>   </h3>
-            
-             </div>
-            <div className="mt-4 mb-4 p-5"> <h3>  </h3>
-            <p>  </p>
-             </div>
-            <div className="mt-4 mb-4 p-5"> <h3> </h3>
-           
-             </div>
-             
- */}
+  
 
-<div className='container'>
+<div className='row justify-content-evenly mb-5'>
 
 
-
-<Card border="primary" className="text-center">
+<Card border="primary" className="text-center col-lg-4">
   <Card.Header>Featured</Card.Header>
   <Card.Body>
     <Card.Title> University of Utah Health Care: “HealthFeed” </Card.Title>
@@ -42,7 +28,7 @@ const Blogs = () => {
   <Card.Footer className="text-muted">Recently posted</Card.Footer>
 </Card>
 
-<Card border="primary" className="text-center mt-5 mb-5">
+<Card border="primary" className="text-center  col-lg-4">
   <Card.Header>Featured</Card.Header>
   <Card.Body>
     <Card.Title>Altru Medical System  </Card.Title>
@@ -54,7 +40,18 @@ const Blogs = () => {
   </Card.Body>
   <Card.Footer className="text-muted">7 days ago</Card.Footer>
 </Card>
-<Card border="primary" className="text-center">
+
+
+</div>
+
+
+
+
+
+<div className='row justify-content-evenly mb-5'>
+
+
+<Card border="primary" className="text-center col-lg-4">
   <Card.Header>Featured</Card.Header>
   <Card.Body>
     <Card.Title> Children’s Hospitals and Clinics of Minnesota: “The Mighty Blog” </Card.Title>
@@ -67,7 +64,7 @@ const Blogs = () => {
   <Card.Footer className="text-muted">11 days ago</Card.Footer>
 </Card>
 
-<Card border="primary" className="text-center mt-5 mb-5">
+<Card border="primary" className="text-center  col-lg-4">
   <Card.Header>Featured</Card.Header>
   <Card.Body>
     <Card.Title> Emory Healthcare: “Advancing Your Health”</Card.Title>
@@ -80,7 +77,15 @@ const Blogs = () => {
   </Card.Body>
   <Card.Footer className="text-muted">12 days ago</Card.Footer>
 </Card>
-<Card border="primary" className="text-center">
+
+</div>
+
+
+
+
+<div className='row justify-content-evenly mb-5'>
+
+<Card border="primary" className="text-center col-lg-4">
   <Card.Header>Featured</Card.Header>
   <Card.Body>
     <Card.Title>The Brigham and Women's Hospital: "Brigham Health Hub"</Card.Title>
@@ -93,14 +98,35 @@ const Blogs = () => {
 </Card>
 
 
+
+<Card border="primary" className="text-center col-lg-4">
+  <Card.Header>Featured</Card.Header>
+  <Card.Body>
+    <Card.Title> Children’s Hospitals and Clinics of Minnesota: “The Mighty Blog” </Card.Title>
+    <Card.Text>
+    <p>   Also known as Children’s Minnesota, the Children’s Hospitals and Clinics of Minnesota aim to keep parents informed when it comes to keeping kids healthy. “The Mighty Blog” knows its audience and speaks to them directly with posts written by previous patients,, updates on national trends from trusted professionals, and overviews of new developments on premises.</p>
+    Visitors to Emory Healthcare’s “Advancing Your Health” blog can read through articles written by physicians associated with the network’s multiple speciality centers, such as the Emory Brain Health Center and the Emory Eye Center. Additionally, the blog prominently features navigation tools that can do everything from taking visitors to healthy recipes to connecting them with doctors for scheduled chats.
+    </Card.Text>
+    
+  </Card.Body>
+  <Card.Footer className="text-muted">11 days ago</Card.Footer>
+</Card>
+
 </div>
 
 
 
 
-                 <Footer></Footer>
+
+
+
+
+
+                 
              
             
+        </div>
+        <Footer></Footer>
         </div>
     );
 };
