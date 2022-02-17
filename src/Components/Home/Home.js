@@ -42,8 +42,8 @@ const Home = () => {
         {/* ============ services part ========= */}
 
 
-                <h1 className='fw-bold mb-5'> Our Services </h1>
-                <hr className="hr-width" />
+                <h1 className='fw-bold '> Our Services </h1>
+                <hr className="hr-width mb-5" />
                
                    <div className="row">
                    {
@@ -85,9 +85,9 @@ const Home = () => {
                 </div>
 
                 {/* ============== Appointment part ============ */}
-                    <h1 id='appointment'> Make An Appointment  </h1>
-                    {/* <hr className="hr-width" /> */}
-                <div className="row mt-5 appointment-container">
+                    <h1 className='' id='appointment'> Make An Appointment  </h1>
+                    <hr className="hr-width mb-5" />
+                <div className="row ">
                     <div className="col-lg-6">
                         <img src={appointment} className="img-fluid" alt="" />
                     </div>

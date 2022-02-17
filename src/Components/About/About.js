@@ -7,11 +7,11 @@ const About = () => {
         <div>
             
             <div className="container mt-5 mb-5">
-                <h1 className="text-primary mb-5"> About us </h1>
-                <hr className="hr-width" />
+                <h1 className="fw-bold "> About us </h1>
+                <hr className="hr-width mb-5" />
                 <div style={{marginTop:'50px',marginBottom:'150px' }}>
 
-                <h3>Our story</h3>
+                <h3 className='text-primary'>Our story</h3>
                 <p> MediCare Hospital is a destination academic pediatric medical center designed to manage the most complex of diseases. We treat the sickest of patients from across the country and around the world. We build research programs to assure tomorrow’s breakthroughs help children everywhere. And we train the next generation of physicians, scientists and health care professionals. 
                     <br />
                     Trinity Mirror, with an award winning portfolio of newspapers, websites and digital products, is one of the UK’s largest multimedia companies employing over 5000 team members in over sixty locations across the UK.
@@ -22,8 +22,9 @@ const About = () => {
                 </div>
                 
                 
-                <Footer></Footer>
+                
             </div>
+            <Footer></Footer>
         </div>
     );
 };

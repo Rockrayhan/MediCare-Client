@@ -8,7 +8,8 @@ const Blogs = () => {
         <div>
           <div className='container'>
             
-            <h1 className="mt-5 mb-5 fw-bold">Welcome To Our Blogs </h1>
+            <h1 className="mt-5  fw-bold">Welcome To Our Blogs </h1>
+            <hr className="hr-width mb-5" />
             
   
 

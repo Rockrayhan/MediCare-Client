@@ -14,7 +14,8 @@ const Department = () => {
         <div>
          
             <div className="container">
-            <h1 className="mt-5 mb-2 text-primary">Our  Departments </h1>
+            <h1 className="mt-5 fw-bold">Our  Departments </h1>
+            <hr className="hr-width mb-5" />
             
              
              <div className="row mb-5 mt-5">
@@ -57,8 +58,9 @@ const Department = () => {
                 
              </div>
 
-            <Footer></Footer>
+            
             </div>
+            <Footer></Footer>
             </div>
        
     );

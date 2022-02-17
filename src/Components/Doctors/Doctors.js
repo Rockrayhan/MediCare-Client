@@ -11,8 +11,9 @@ const Doctors = () => {
         <div>
             
             <div className="container">
-            <h1 className="mt-5 mb-2"> Experienced Doctors </h1>
-            <h5>Here are some world class popularly recomended doctors </h5>
+            <h1 className="mt-5 fw-bold mb-3"> Experienced Doctors </h1>
+            <h5>Here are some world class popularly recomended doctors. </h5>
+            <hr className="hr-width mb-5" />
              
              <div className="row mb-5 mt-5">
                  <div className="col-lg-6">
@@ -41,9 +42,9 @@ const Doctors = () => {
                 
              </div>
 
-            <Footer></Footer>
-            </div>
             
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
