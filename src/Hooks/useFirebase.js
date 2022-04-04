@@ -9,21 +9,26 @@ const useFirebase = () => {
   const [user, setUser] = useState({})
   const [isLoading, setIsLoading] = useState(true);
   console.log(user);
-  const googleSignIn = () => {
+
+
+
+  const googleSignIn = (location, history) => {
     setIsLoading(true)
     const googleProvider = new GoogleAuthProvider();
-
-
+  
     signInWithPopup(auth, googleProvider)
       .then((result) => {
+        const destination = location?.state?.from || '/' ; 
+        history.replace(destination);
+
         const user = result.user;
         setUser(user)
 
       }).catch((error) => {
         const errorMessage = error.message;
         alert(errorMessage);
-      });
-      
+      })
+      .finally(() => setIsLoading(false));
 
   }
 
