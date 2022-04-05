@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './styles.module.css';
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -46,15 +45,15 @@ const Signup2 = () => {
     return (
         <div className='container justify-content-center d-flex'>
             <div className='signup_form_container row'>
-                <div className='left col-lg-4'>
+                <div className='signup-left col-lg-4'>
                     <h1 className='mb-4'>Welcome Back</h1>
                     <Link to="/login2">
-                        <button type="button" className="white_btn mb-5">
+                        <button type="button" className="white_btn">
                             Sing in
                         </button>
                     </Link>
                 </div>
-                <div className='right col-lg-8'>
+                <div className='signup-right col-lg-8'>
                     <form className='' onSubmit={handleSubmit}>
                         <h1>Create Account</h1>
                         <input
