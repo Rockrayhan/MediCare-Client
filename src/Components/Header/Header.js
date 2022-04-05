@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavbarBrand, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Header.css'
@@ -13,12 +13,12 @@ const Header = () => {
   }
 
   return (
-    <div style={{marginBottom:'100px'}}>
+    <div style={{ marginBottom: '100px' }}>
 
 
 
 
-      <Navbar  fixed='top' bg="primary" variant="dark" expand="lg">
+      <Navbar fixed='top' bg="primary" variant="dark" expand="lg">
         <Container>
           <NavbarBrand className='fw-bold' href='/'>MediCare</NavbarBrand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -34,7 +34,20 @@ const Header = () => {
 
 
             <Nav>
-               <span className='user-name'>{user.displayName} </span>
+
+            <NavDropdown title="Login/Logout " id="basic-nav-dropdown">
+
+          <NavDropdown.Item href="#action/3.1">
+          <NavLink className="nav-link" aria-current="page" to="/signup2"><button className="btn-success">Sign Up</button></NavLink>
+          </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">
+          <NavLink className="nav-link" aria-current="page" to=""><button onClick={handleLogOut} className="btn-success">Log out</button></NavLink>
+          </NavDropdown.Item>
+          
+        </NavDropdown>
+
+
+              {/* <span className='user-name'>{user.displayName} </span>
 
 
               {
@@ -44,7 +57,7 @@ const Header = () => {
                   :
 
                   <NavLink className="nav-link active" aria-current="page" to="/signup2"><button className="btn btn-success">Sign Up</button></NavLink>
-              }
+              } */}
             </Nav>
           </Navbar.Collapse>
         </Container>

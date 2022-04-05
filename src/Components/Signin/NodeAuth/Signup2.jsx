@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom';
+import './signup2.css'
 const Signup2 = () => {
 
     const [data, setData] = useState({
@@ -43,18 +44,18 @@ const Signup2 = () => {
 
 
     return (
-        <div className={styles.signup_container}>
-            <div className={styles.signup_form_container}>
-                <div className={styles.left}>
-                    <h1>Welcome Back</h1>
+        <div className='container justify-content-center d-flex'>
+            <div className='signup_form_container row'>
+                <div className='left col-lg-4'>
+                    <h1 className='mb-4'>Welcome Back</h1>
                     <Link to="/login2">
-                        <button type="button" className={styles.white_btn}>
+                        <button type="button" className="white_btn mb-5">
                             Sing in
                         </button>
                     </Link>
                 </div>
-                <div className={styles.right}>
-                    <form className={styles.form_container} onSubmit={handleSubmit}>
+                <div className='right col-lg-8'>
+                    <form className='' onSubmit={handleSubmit}>
                         <h1>Create Account</h1>
                         <input
                             type="text"
@@ -63,7 +64,7 @@ const Signup2 = () => {
                             onChange={handleChange}
                             value={data.firstName}
                             required
-                            className={styles.input}
+                            className='input'
                         />
                         <input
                             type="text"
@@ -72,7 +73,7 @@ const Signup2 = () => {
                             onChange={handleChange}
                             value={data.lastName}
                             required
-                            className={styles.input}
+                            className='input'
                         />
                         <input
                             type="email"
@@ -81,7 +82,7 @@ const Signup2 = () => {
                             onChange={handleChange}
                             value={data.email}
                             required
-                            className={styles.input}
+                            className='input'
                         />
                         <input
                             type="password"
@@ -90,10 +91,12 @@ const Signup2 = () => {
                             onChange={handleChange}
                             value={data.password}
                             required
-                            className={styles.input}
+                            className='input'
                         />
-                        {error && <div className={styles.error_msg}>{error}</div>}
-                        <button type="submit" className={styles.green_btn}>
+                        <br />
+
+                        {error && <div className="error_msg">{error}</div>}
+                        <button type="submit" className='green_btn'>
                             Sing Up
                         </button>
                     </form>
