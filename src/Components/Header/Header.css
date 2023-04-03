@@ -6,3 +6,8 @@
     font-style: italic;
     margin-top: 15px;
 }
+
+.nav-hover:hover{
+        background-color: aqua;
+
+}

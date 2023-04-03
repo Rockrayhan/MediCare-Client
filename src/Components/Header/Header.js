@@ -24,12 +24,12 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLink className="nav-link active ms-3" aria-current="page" to="/home">Home</NavLink>
-              <NavLink className="nav-link active ms-3" aria-current="page" to="/department">Department</NavLink>
-              <NavLink className="nav-link active ms-3" aria-current="page" to="/about">About us</NavLink>
-              <NavLink className="nav-link active ms-3" aria-current="page" to="/contact">Contact</NavLink>
-              <NavLink className="nav-link active ms-3" aria-current="page" to="/doctors">Doctors</NavLink>
-              <NavLink className="nav-link active ms-3" aria-current="page" to="/blogs">Blogs</NavLink>
+              <NavLink className="nav-link active ms-3 nav-hover" aria-current="page" to="/home">Home</NavLink>
+              <NavLink className="nav-link active ms-3 nav-hover" aria-current="page" to="/department">Department</NavLink>
+              <NavLink className="nav-link active ms-3 nav-hover" aria-current="page" to="/about">About us</NavLink>
+              <NavLink className="nav-link active ms-3 nav-hover" aria-current="page" to="/contact">Contact</NavLink>
+              <NavLink className="nav-link active ms-3 nav-hover" aria-current="page" to="/doctors">Doctors</NavLink>
+              <NavLink className="nav-link active ms-3 nav-hover" aria-current="page" to="/blogs">Blogs</NavLink>
             </Nav>
 
 
@@ -56,7 +56,7 @@ const Header = () => {
 
                   :
 
-                  <NavLink className="nav-link active" aria-current="page" to="/signin"><button className="btn btn-success">Sign Up</button></NavLink>
+                  <NavLink className="nav-link active" aria-current="page" to="/signin"><button className="btn btn-success px-4 py-2">Sign Up</button></NavLink>
               }
             </Nav>
           </Navbar.Collapse>
