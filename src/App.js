@@ -10,8 +10,6 @@ import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
-import Login2 from './Components/Signin/NodeAuth/Login2/Login2';
-import Signup2 from './Components/Signin/NodeAuth/Signup2';
 import Signin from './Components/Signin/Signin';
 import AuthProvider from './Context/AuthProvider';
 
@@ -49,12 +47,7 @@ function App() {
       <Route path="/signin"> 
         <Signin></Signin>
       </Route>
-      <Route path="/signup2"> 
-        <Signup2></Signup2>
-      </Route>
-      <Route path="/login2"> 
-        <Login2></Login2>
-      </Route>
+   
 
 
       <PrivateRoute path="/seeDetails/:id"> 

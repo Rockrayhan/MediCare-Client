@@ -1,46 +1,36 @@
 import React from 'react';
 import useAuth from '../../Hooks/useAuth';
-import login_bg from '../../images/login_bg.jpg' ;
+import login_1 from '../../images/login1.jpg';
+import google_logo from '../../images/google.png';
+import './Signin.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const bannerStyle = {
-    backgroundImage: `url(${login_bg})`,
+    backgroundImage: `url(${login_1})`,
     height: '100vh',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    width:'100%',       
+    width: '100%',
 }
 
 
 const Signin = () => {
-    const {googleSignIn} = useAuth() ;
+    const { googleSignIn } = useAuth();
     return (
         <div className='' style={bannerStyle}>
-            
-            
-            {/* <div style={{width:'40%'}} className="container">
-            <h2 className="mt-5 mb-4">Please Login</h2>
-            <form>
-                <div className="row mb-3">
-                    <label for="inputEmail3" className="col-sm-2 col-form-label">Email</label>
-                    <div className="col-sm-10">
-                        <input type="email" className="form-control" id="inputEmail3" />
-                    </div>
-                </div>
-                <div className="row mb-3">
-                    <label for="inputPassword3" className="col-sm-2 col-form-label">Password</label>
-                    <div className="col-sm-10">
-                        <input type="password" className="form-control" id="inputPassword3" />
-                    </div>
-                </div>
-            </form>
-            <button className="btn btn-success">Log in</button>
-            </div> */}
 
+            <div className='d-flex justify-content-center align-items-center' >
+                <Card className='login-card p-4' style={{ width: '18rem' }}>
+                    <Card.Body>
+                        <Card.Title className='fw-bold'>Please Sign In with Google</Card.Title>
+                        <br />
+                        <Button className='mt-5' onClick={googleSignIn} variant="primary"> <img className='img-fluid goole-img' src={google_logo} alt="" /> Google Sign In</Button>
 
-                <button onClick={googleSignIn} className="btn btn-primary ms-4">Google Sign In</button>
-            
-               
-                
+                        
+                    </Card.Body>
+                </Card>
+            </div>
         </div>
     );
 };

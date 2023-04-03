@@ -1,0 +1,41 @@
+/* .signin_bg {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.containerr {
+    position: relative;
+    color: white;
+
+}
+
+.containerr::after {
+    content: "Hello";
+    opacity: 0.9;
+    background:  url("../../images/login_bg.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    overflow: hidden;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+} */
+
+
+
+.login-card {
+    border-radius: 30px;
+   height: 250px;
+   margin-top: 200px;
+   border: 2px solid rgb(25, 180, 242);
+   background-color: rgba(87, 227, 227, 0.245);
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.goole-img{
+    width: 40px;
+}
