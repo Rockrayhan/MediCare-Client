@@ -7,13 +7,13 @@ const Header = () => {
 
   const { user, logOut } = useAuth();
 
-  const handleLogOut = () => {
-    localStorage.removeItem("token");
-    window.location.reload();
-  }
+  // const handleLogOut = () => {
+  //   localStorage.removeItem("token");
+  //   window.location.reload();
+  // }
 
   return (
-    <div style={{ marginBottom: '100px' }}>
+    <div style={{ marginBottom: '65px' }}>
 
 
 
@@ -35,29 +35,29 @@ const Header = () => {
 
             <Nav>
 
-            <NavDropdown title="Login/Logout " id="basic-nav-dropdown">
+              {/* <NavDropdown title="Login/Logout " id="basic-nav-dropdown">
 
-          <NavDropdown.Item href="#action/3.1">
-          <NavLink className="nav-link" aria-current="page" to="/signup2"><button className="btn-success">Sign Up</button></NavLink>
-          </NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">
-          <NavLink className="nav-link" aria-current="page" to=""><button onClick={handleLogOut} className="btn-success">Log out</button></NavLink>
-          </NavDropdown.Item>
-          
-        </NavDropdown>
+                <NavDropdown.Item href="#action/3.1">
+                  <NavLink className="nav-link" aria-current="page" to="/signup2"><button className="btn-success">Sign Up</button></NavLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  <NavLink className="nav-link" aria-current="page" to=""><button onClick={handleLogOut} className="btn-success">Log out</button></NavLink>
+                </NavDropdown.Item>
+
+              </NavDropdown> */}
 
 
-              {/* <span className='user-name'>{user.displayName} </span>
+              <span className='user-name'>{user.displayName} </span>
 
 
               {
                 user?.email ?
-                  <NavLink className="nav-link active" aria-current="page" to=""><button onClick={handleLogOut} className="btn btn-success">Log out</button></NavLink>
+                  <NavLink className="nav-link active" aria-current="page" to=""><button onClick={logOut} className="btn btn-danger">Log out</button></NavLink>
 
                   :
 
-                  <NavLink className="nav-link active" aria-current="page" to="/signup2"><button className="btn btn-success">Sign Up</button></NavLink>
-              } */}
+                  <NavLink className="nav-link active" aria-current="page" to="/signin"><button className="btn btn-success">Sign Up</button></NavLink>
+              }
             </Nav>
           </Navbar.Collapse>
         </Container>

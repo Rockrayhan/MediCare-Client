@@ -1,14 +1,23 @@
 import React from 'react';
 import useAuth from '../../Hooks/useAuth';
+import login_bg from '../../images/login_bg.jpg' ;
+
+const bannerStyle = {
+    backgroundImage: `url(${login_bg})`,
+    height: '100vh',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    width:'100%',       
+}
 
 
 const Signin = () => {
     const {googleSignIn} = useAuth() ;
     return (
-        <div className='d-flex justify-content-center align-items-center'>
+        <div className='' style={bannerStyle}>
             
             
-            <div style={{width:'40%'}} className="container">
+            {/* <div style={{width:'40%'}} className="container">
             <h2 className="mt-5 mb-4">Please Login</h2>
             <form>
                 <div className="row mb-3">
@@ -25,9 +34,11 @@ const Signin = () => {
                 </div>
             </form>
             <button className="btn btn-success">Log in</button>
+            </div> */}
+
 
                 <button onClick={googleSignIn} className="btn btn-primary ms-4">Google Sign In</button>
-            </div>
+            
                
                 
         </div>
