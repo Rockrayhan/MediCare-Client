@@ -16,4 +16,4 @@ here is the live site link : https://hospital-auth-6d139.web.app/
 
 - You can't go to some protected/private pages before login.
 
-- You can Login or Register with your email & password or Gmail. 
+
