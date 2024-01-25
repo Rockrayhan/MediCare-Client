@@ -49,13 +49,21 @@ const useFirebase = () => {
   }, [])
 
   const logOut = () => {
-
-signOut(auth).then(() => {
-
-}).catch((error) => {
-    
-});
-  }
+    const userConfirmed = confirm('Are you sure you want to log out?');
+    if (userConfirmed) {
+      alert('User Logged Out');
+      signOut(auth)
+        .then(() => {
+          console.log('User successfully signed out');
+        })
+        .catch((error) => {
+          console.error('Error during sign-out:', error);
+        });
+    } else {
+      alert('Log out canceled');
+    }
+  };
+  
 
   return {
     user,
