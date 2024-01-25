@@ -1,6 +1,9 @@
 import { GoogleAuthProvider, getAuth, signInWithPopup, onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import authInit from "../Components/Firebase/firebase.init";
+import { useHistory } from "react-router-dom";
+
+
 authInit();
 
 
@@ -11,27 +14,26 @@ const useFirebase = () => {
   console.log(user);
 
 
+  const history = useHistory();
 
-  const googleSignIn = (location, history) => {
-    setIsLoading(true)
+  const googleSignIn = () => {
+    setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
-  
+
     signInWithPopup(auth, googleProvider)
       .then((result) => {
-        const destination = location?.state?.from || '/' ; 
+        const destination = history.location.state?.from || '/';
         history.replace(destination);
 
         const user = result.user;
-        setUser(user)
-
-      }).catch((error) => {
+        setUser(user);
+      })
+      .catch((error) => {
         const errorMessage = error.message;
-        // alert(errorMessage);
         console.log(errorMessage);
       })
       .finally(() => setIsLoading(false));
-
-  }
+  };
 
   useEffect(() => {
 
@@ -49,9 +51,8 @@ const useFirebase = () => {
   }, [])
 
   const logOut = () => {
-    const userConfirmed = confirm('Are you sure you want to log out?');
-    if (userConfirmed) {
-      alert('User Logged Out');
+
+      alert('User Logging Out');
       signOut(auth)
         .then(() => {
           console.log('User successfully signed out');
@@ -59,9 +60,7 @@ const useFirebase = () => {
         .catch((error) => {
           console.error('Error during sign-out:', error);
         });
-    } else {
-      alert('Log out canceled');
-    }
+ 
   };
   
 

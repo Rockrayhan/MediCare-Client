@@ -16,20 +16,27 @@ const bannerStyle = {
 
 
 const Signin = () => {
-    const { googleSignIn } = useAuth();
+    const { googleSignIn, user } = useAuth();
+    
     return (
         <div className='' style={bannerStyle}>
 
             <div className='d-flex justify-content-center align-items-center' >
+                  { user ? 
+                  <div> <h1 className='mt-5'>You Are Logged In  {user.displayName} </h1> </div> 
+                  :  
+                  
                 <Card className='login-card p-4' style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title className='fw-bold'>Please Sign In with Google</Card.Title>
-                        <br />
-                        <Button className='mt-5' onClick={googleSignIn} variant="primary"> <img className='img-fluid goole-img' src={google_logo} alt="" /> Google Sign In</Button>
+                  <Card.Body>
+                  <Card.Title className='fw-bold'>Please Sign In with Google</Card.Title>
+                  <br />
+                  <Button className='mt-5' onClick={googleSignIn} variant="primary"> <img className='img-fluid goole-img' src={google_logo} alt="" /> Google Sign In</Button>
 
-                        
-                    </Card.Body>
+                  
+              </Card.Body>
                 </Card>
+                  
+                  }
             </div>
         </div>
     );
